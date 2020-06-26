@@ -8,14 +8,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sa-mw-dach/manuela-gitops.git
+    repoURL: https://github.com/ably77/manuela-gitops.git
     targetRevision: HEAD
     path: config/instances/manuela-stormshift/line-dashboard
   destination:
     server: https://kubernetes.default.svc
     namespace: manuela-stormshift-line-dashboard
   syncPolicy:
-    automated: 
+    automated:
       prune: true
       selfHeal: true
   ignoreDifferences:
